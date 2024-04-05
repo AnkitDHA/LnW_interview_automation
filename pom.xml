@@ -93,6 +93,11 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
+          <configuration>
+                <systemPropertyVariables>
+                    <headless.mode>true</headless.mode> <!-- Enable headless mode -->
+                </systemPropertyVariables>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
